@@ -5,7 +5,7 @@ namespace vix::ai::nn::layers
     class Conv2D
     {
     public:
-        Conv2D(std::size_t k = 3) : k_(k) {}
+        explicit Conv2D(std::size_t k = 3) : k_(k) {}
         std::size_t kernel() const { return k_; }
 
     private:
