@@ -5,7 +5,7 @@ namespace vix::ai::nn::layers
     class Transformer
     {
     public:
-        Transformer(std::size_t h = 8) : heads_(h) {}
+        explicit Transformer(std::size_t h = 8) : heads_(h) {}
         std::size_t heads() const { return heads_; }
 
     private:
